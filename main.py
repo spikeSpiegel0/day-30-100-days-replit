@@ -1,9 +1,10 @@
-name = "Katie"
-age = "28"
-pronouns = "she/her"
-
-response = f"""This is {name}, using {pronouns} pronouns, and is {age} years old. Hello, {name}. 
-
-How are you? Have you been having a great {age} years so far"""
-
-print(response)
+print("30 days down - What did you think?")
+print()
+for i in range(1, 31):
+  q = input(f"""Day {i} : 
+  """)
+  print()
+  response = f"You thought day {i: ^3} was"
+  print(f"{response: ^30}")
+  print(f"{q: ^30}")
+  print()
